@@ -1,7 +1,8 @@
 package com.hasanboy.Atto.service;
 
-import com.Hibrnate.Atto.model.Terminal;
-import com.Hibrnate.Atto.util.HibernateUtil;
+
+import com.hasanboy.Atto.model.Terminal;
+import com.hasanboy.Atto.util.HibernateUtil;
 import org.hibernate.Session;
 import org.springframework.stereotype.Component;
 

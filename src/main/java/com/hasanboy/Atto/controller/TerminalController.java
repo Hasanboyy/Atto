@@ -1,7 +1,7 @@
 package com.hasanboy.Atto.controller;
 
-import com.Hibrnate.Atto.model.Terminal;
-import com.Hibrnate.Atto.service.TerminalService;
+import com.hasanboy.Atto.model.Terminal;
+import com.hasanboy.Atto.service.TerminalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

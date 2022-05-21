@@ -1,10 +1,10 @@
 package com.hasanboy.Atto.service;
 
-import com.Hibrnate.Atto.exeption.AttoExeption;
-import com.Hibrnate.Atto.model.Card;
-import com.Hibrnate.Atto.model.Terminal;
-import com.Hibrnate.Atto.model.Transaction;
-import com.Hibrnate.Atto.util.HibernateUtil;
+import com.hasanboy.Atto.exeption.AttoExeption;
+import com.hasanboy.Atto.model.Card;
+import com.hasanboy.Atto.model.Terminal;
+import com.hasanboy.Atto.model.Transaction;
+import com.hasanboy.Atto.util.HibernateUtil;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

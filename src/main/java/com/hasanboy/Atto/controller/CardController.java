@@ -1,7 +1,7 @@
 package com.hasanboy.Atto.controller;
 
-import com.Hibrnate.Atto.model.Card;
-import com.Hibrnate.Atto.service.CardService;
+import com.hasanboy.Atto.model.Card;
+import com.hasanboy.Atto.service.CardService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,7 @@ public class CardController {
 
     private final CardService cardService;
 
-    public CardController(CardService cardService){
+    public CardController(CardService cardService) {
         this.cardService = cardService;
     }
 
@@ -26,25 +26,25 @@ public class CardController {
 
     @PatchMapping("/create/balance")
     public ResponseEntity<?> addbalance(@RequestParam("n") String number,
-                                        @RequestParam("c")BigDecimal cesh){
-        Card result = cardService.addBalance(number,cesh);
+                                        @RequestParam("c") BigDecimal cesh) {
+        Card result = cardService.addBalance(number, cesh);
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/getByCard/{id}")
-    public ResponseEntity<?> getById(@PathVariable("id") Integer id){
+    public ResponseEntity<?> getById(@PathVariable("id") Integer id) {
         Card result = cardService.getById(id);
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/getAllCard")
-    public ResponseEntity<?> getAllCard(){
+    public ResponseEntity<?> getAllCard() {
         List<Card> result = cardService.getAll();
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/get/card/number/{number}")
-    public ResponseEntity<?> getCardNumber(@PathVariable("number") String number){
+    public ResponseEntity<?> getCardNumber(@PathVariable("number") String number) {
         Card result = cardService.getByCardNumber(number);
         return ResponseEntity.ok(result);
     }
